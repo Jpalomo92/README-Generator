@@ -47,7 +47,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [How to Contribute](#how-to-contribute)
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions?](#questions)
 
@@ -64,7 +64,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
 
-  ## Contribution Guidelines
+  ## Contributing
   [Contributor Covenant](https://www.contributor-covenant.org/)  
   ${data.contributing}
 
