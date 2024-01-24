@@ -1,16 +1,40 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  //(https://img.shields.io/badge/License-${license}-brightgreen.svg)
+  if (license) {
+    return `[![${license} license](https://img.shields.io/badge/License-${license}-brightgreen.svg)](${renderLicenseLink(license)})`
+  } else {
+    return ``;
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'MIT') {
+    return `https://lbesson.mit-license.org/`
+  }
+  if (license === 'GPL') {
+    return `http://perso.crans.org/besson/LICENSE.html`
+  }
+  if (license === 'Apache') {
+    return `https://www.apache.org/licenses/LICENSE-2.0` 
+  }
+  else {
+    return ``
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (!license) {
+    return ``;
+  } else {
+    return `## Licenses
+    This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -27,10 +51,6 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Questions?](#questions)
 
-  ## License
-  ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
-
   ## Description
   ${data.description}
 
@@ -39,6 +59,10 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
+  ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contribution Guidelines
   [Contributor Covenant](https://www.contributor-covenant.org/)  
@@ -49,7 +73,7 @@ function generateMarkdown(data) {
 
   ## Questions?
   ### Reach me here: 
-  [${data.username}](https://github.com/${data.username})  
+  [${data.github}](https://github.com/${data.github})  
   ${data.email}
 `;
 }

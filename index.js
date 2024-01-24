@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
+        name: 'install',
         message: 'What are the instructions for installation?',
 
     },
@@ -43,7 +43,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a license for your application:",
-        choices: ["MIT", "Apache", "GPL", "None"],
+        choices: ["MIT", "GPL", "Apache", "None"],
     },
     {
         type: 'input',
