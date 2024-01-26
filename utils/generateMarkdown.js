@@ -31,7 +31,7 @@ function renderLicenseSection(license) {
   if (!license) {
     return ``;
   } else {
-    return `## Licenses
+    return `
     This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`
   }
 }
@@ -72,7 +72,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Questions?
-  ### Reach me here: 
+  ### Please reach me here: 
   [${data.github}](https://github.com/${data.github})  
   ${data.email}
 `;
