@@ -62,7 +62,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
         if (err) throw new Error(err);
 
-        console.log("Readme Generated! Go to readme.md in the dist folder to see it!")
+        console.log("Readme Generated! Go to readme.md file to see it!")
     })
 
 }
