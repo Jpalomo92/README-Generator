@@ -20,7 +20,7 @@
   ## Usage
   To use this project, be sure that you are in the correct file path in your command-line/terminal. Once you are in the correct file path of the cloned files, type node index.js in your command-line. From here, you will then be provided a list of prompts to answer.
   
-  [Click here to see a video on how to use this application](https://drive.google.com/file/d/1gp4qlEWNyNOy6DNAqLoXgZtz1zou58Nb/view)  
+  [Video on how to use this application](https://drive.google.com/file/d/1gp4qlEWNyNOy6DNAqLoXgZtz1zou58Nb/view)  
 
   ## License
   
@@ -36,5 +36,5 @@
 
   ## Questions?
   ### Please reach me here: 
-  [Jpalomo92](https://github.com/Jpalomo92)  
-  test@test.com
+  [My GitHub: Jpalomo92](https://github.com/Jpalomo92)  
+  Jpalomo92@gmail.com
